@@ -1,0 +1,102 @@
+:root {
+  --navbar-bg: #725d9e;
+  --white-text: #ffffff;
+  --hover-text: #9c9898;
+
+  --one-point-one: 1.1rem;
+}
+
+.navbar {
+  background: var(--navbar-bg);
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-content: space-between;
+  align-items: center;
+}
+
+.sing-data {
+  margin: auto;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  list-style-type: none;
+}
+
+.sing-data .login,
+.sing-data .sing {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--white-text);
+}
+
+.sing-data .login:hover {
+  color: var(--hover-text);
+}
+
+.sing-data .sing:hover {
+  color: var(--hover-text);
+}
+
+.login {
+  margin-right: 1rem;
+}
+
+.app-title {
+  width: 80%;
+  margin-left: 1rem;
+  font-size: var(--one-point-one);
+  font-weight: 700;
+  color: var(--white-text);
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sing-data {
+    margin-bottom: 1.5rem;
+  }
+
+  .login {
+    margin-right: 0;
+  }
+
+  .app-title {
+    text-align: center;
+  }
+
+  .sing-data .login,
+  .sing-data .sing {
+    margin-right: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+    .app-title{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .app-title{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app-title{
+        width: 50%;
+    }
+}

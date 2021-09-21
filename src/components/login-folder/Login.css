@@ -1,0 +1,157 @@
+:root {
+  --border-color: #ddd0e4dc;
+  --login-component: #865d9e8f;
+  --task: #966576;
+  --white-color: #ffffff;
+  --form-text-color: #380963;
+  --black-color: #000000;
+  --button-bg-color: #b6456b;
+  --green-color: #4caf50;
+  --red-color: #8a2626;
+
+  --one-point-four: 1.4rem;
+  --two-point-seven: 2.7rem;
+  --one: 1rem;
+}
+
+.external{
+  background: url(../images/bg-color.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-component {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--login-component);
+  box-shadow: 5px 5px 10px var(--border-color);
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 8rem;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  overflow: scroll;
+}
+
+.welcome {
+  text-align: center;
+  padding: 1rem;
+}
+
+.welcome-text {
+  color: var(--white-color);
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: var(--one-point-four);
+}
+
+.message {
+  color: var(--white-color);
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: var(--one);
+  margin-bottom: 2rem;
+}
+
+.humaaans{
+  width: 100%;
+}
+
+.login-form {
+  width: 60%;
+  text-align: center;
+}
+
+.get-start {
+  color: var(--white-color);
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: var(--two-point-seven);
+}
+
+.account {
+  color: var(--white-color);
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--one);
+  margin-bottom: 3rem;
+}
+
+.user-name,
+.user-email {
+  color: var(--form-text-color);
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.user-password {
+  color: var(--form-text-color);
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.input-data {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 50%;
+  height: 1.7rem;
+  border: 1px solid var(--login-component);
+  border-radius: 5px;
+}
+
+.input-data:focus {
+  outline: none;
+  border: 1px solid;
+  border-color: var(--black-color);
+}
+
+.login-button {
+  width: 40%;
+  height: 2.1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  background: var(--button-bg-color);
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: var(--one);
+  border: none;
+}
+
+.login-button:hover {
+  background-color: var(--green-color); 
+  color: var(--black-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .login-component{
+    flex-direction: column;
+  }
+  .external{
+    height: 140vh;
+  }
+
+  .login-component{
+    width: 85%;
+  }
+
+  .input-data{
+    width: 100%;
+  }
+  .login-button{
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}

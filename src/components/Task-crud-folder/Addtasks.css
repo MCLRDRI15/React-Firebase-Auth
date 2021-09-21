@@ -1,0 +1,84 @@
+.container-tasks {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--login-component);
+  box-shadow: 5px 5px 10px var(--border-color);
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 4rem;
+}
+
+.card-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.task-title-input,
+.task-type-input,
+.task-description-input {
+  width: 90%;
+}
+
+.task-title-input,
+.task-type-input {
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  height: 1.7rem;
+}
+
+.task-description-input {
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  height: 8rem;
+}
+
+.task-title,
+.task-type {
+  color: var(--form-text-color);
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.task-description {
+  color: var(--form-text-color);
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.save-button {
+  width: 60%;
+  height: 2.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  background: var(--button-bg-color);
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: var(--one);
+  border: none;
+}
+
+.save-button:hover {
+    background-color: var(--green-color); 
+    color: var(--black-color);
+  }
+
+@media screen and (max-width: 1024px) {
+  .container-tasks {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container-tasks {
+    width: 90%;
+  }
+}
